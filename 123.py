@@ -20,7 +20,7 @@ if st.button('我就猜这个了嗷'):
     elif user_guess > st.session_state.number:
         st.write("诶我去了，猜的数字也太大了！")
     else:
-        st.write(f"牛逼了，让你猜对了，回头让李明航给你发红包，你得记得找他要，虽然他可能不。你猜了 {st.session_state.attempts} 次！")
+        st.write(f"牛逼了，让你猜对了，回头让李明航给你发红包，你得记得找他要，虽然他可能不给。你猜了 {st.session_state.attempts} 次！")
         st.session_state.number = random.randint(1, 200)  # 重新生成一个新的数字
         st.session_state.attempts = 0  # 重置尝试次数
 
