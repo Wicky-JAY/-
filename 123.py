@@ -10,7 +10,7 @@ if 'number' not in st.session_state:
     st.session_state.attempts = 0
 
 # 输入框，让用户猜数字
-user_guess = st.number_input('亲爱的同学，请输入一个1到200之间的数字:', min_value=1, max_value=100)
+user_guess = st.number_input('亲爱的同学，请输入一个1到200之间的数字:', min_value=1, max_value=200)
 
 # 按钮点击事件
 if st.button('我就猜这个了嗷'):
